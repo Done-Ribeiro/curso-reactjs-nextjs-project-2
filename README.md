@@ -28,6 +28,7 @@
 ### `useCallback`
 
 - É pra memorizar um callback (uma função de callback)
+
 <code>Precisa salvar a sua função (fn) em algum lugar...
 Em alguns casos, criar a fn é mais barato que salvar a fn em memória</code>
 
@@ -38,7 +39,16 @@ Em alguns casos, criar a fn é mais barato que salvar a fn em memória</code>
 - Pode utilizar um componente em si
 - Pode utilizar um valor em si para ser memorizado
 - Pode utilizar useMemo ou React.memo... tanto faz
+
 <code>sempre checa pra ver se tem o problema...
 e se é realmente necessário o uso dele useMemo...</code>
 
 [https://pt-br.reactjs.org/docs/hooks-reference.html#usecallback](https://pt-br.reactjs.org/docs/hooks-reference.html#usecallback)
+
+### `useRef`
+
+- Pra pegar alguma coisa que está na tela (um elemento mesmo -> da DOM)
+- Não causa re-renderização...
+- Pode ser usado para atualizar valores
+
+[https://pt-br.reactjs.org/docs/hooks-reference.html#useref](https://pt-br.reactjs.org/docs/hooks-reference.html#useref)
