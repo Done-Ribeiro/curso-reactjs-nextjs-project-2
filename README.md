@@ -59,3 +59,37 @@ e se é realmente necessário o uso dele useMemo...</code>
 - Utilizado para criar estados globais da aplicação
 
 [https://pt-br.reactjs.org/docs/hooks-reference.html#usecontext](https://pt-br.reactjs.org/docs/hooks-reference.html#usecontext)
+
+### `useReducer`
+
+- Utilizado com estados mais complexos que requerem alguma lógica
+- 1º param -> uma fn | 2º param -> estado inicial
+- Ele retorna o estado e uma fn de `dispatch`
+
+  - o <i>dispatch</i> por padrão utiliza estas duas chaves (com estes nomes por padrão):
+    - `type ->` nome da ação que será realizada
+    - `payload ->` conteúdo da ação (dados) `[OPCIONAL]`
+  - SEMPRE: retorne um estado default no `reducer` (caso contrário o programa vai quebrar)
+
+Exemplo 1 (somente default do reducer): `return { ...state } ->` retornando o estado anterior
+
+```js
+const reducer = (state, action) => {
+  return { ...state };
+};
+```
+
+Exemplo 2 (action + default do reducer):
+
+```js
+const reducer = (state, action) => {
+  switch (action.type) {
+    case 'muda': {
+      return { ...state, title: action.payload };
+    }
+
+  return { ...state };
+};
+```
+
+[https://pt-br.reactjs.org/docs/hooks-reference.html#usereducer](https://pt-br.reactjs.org/docs/hooks-reference.html#usereducer)
