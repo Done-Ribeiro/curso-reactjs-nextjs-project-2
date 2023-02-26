@@ -1,6 +1,7 @@
 # React Hooks
 
 ## Links Úteis
+
 - Ciclos de vida: [https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
 - Manipulando eventos: [https://pt-br.reactjs.org/docs/handling-events.html](https://pt-br.reactjs.org/docs/handling-events.html)
@@ -52,3 +53,9 @@ e se é realmente necessário o uso dele useMemo...</code>
 - Pode ser usado para atualizar valores
 
 [https://pt-br.reactjs.org/docs/hooks-reference.html#useref](https://pt-br.reactjs.org/docs/hooks-reference.html#useref)
+
+### `useContext`
+
+- Utilizado para criar estados globais da aplicação
+
+[https://pt-br.reactjs.org/docs/hooks-reference.html#usecontext](https://pt-br.reactjs.org/docs/hooks-reference.html#usecontext)
