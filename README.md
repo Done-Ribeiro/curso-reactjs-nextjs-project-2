@@ -93,3 +93,7 @@ const reducer = (state, action) => {
 ```
 
 [https://pt-br.reactjs.org/docs/hooks-reference.html#usereducer](https://pt-br.reactjs.org/docs/hooks-reference.html#usereducer)
+
+### `custom Hooks`
+
+[https://overreacted.io/making-setinterval-declarative-with-react-hooks/](https://overreacted.io/making-setinterval-declarative-with-react-hooks/)
